@@ -93,7 +93,7 @@
 }
 
 h1 {
-  width: 700px;
+  width: 50%;
   position: relative;
   z-index: 2;
   margin: 0 auto;
@@ -241,7 +241,7 @@ h1 {
 .container {
   display: flex;
   max-width: 1220px;
-  margin: 50px auto;
+  margin: 50px auto 0;
   padding: 0 30px;
 }
 
@@ -259,7 +259,7 @@ h1 {
 }
 
 .card-image {
-  width: 90%;
+  width: 100%;
 }
 
 .card-content {
@@ -904,5 +904,82 @@ h1 {
   .product {
     width: 46%;
   }
-}  
+}
 
+@media (max-width: 640px) {
+  .menu {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .logo-menu {
+    padding-top: 150px;
+    justify-content: center;
+  }
+
+  .logo-image {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .trends-content {
+    flex-wrap: wrap;
+  }
+
+  .trend {
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 0;
+  }
+  .main {
+    padding: 0 15px;
+    margin-right: 0;
+  }
+
+  .card {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .card-content {
+    margin-left: 0;
+  }
+
+  .card-image {
+    max-width: 100%;
+  }
+  .card-img {
+    width: 100%;
+  }
+
+  .sidebar {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .product {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .products-content {
+    flex-wrap: wrap;
+  }
+
+  
+
+  
+}
