@@ -393,23 +393,32 @@ h1 {
 }
 
 .search-posts {
-  position: relative;
+  width: 100%;
   display: flex;
+
   margin-top: 60px;
 }
 
 .search-area {
-  width: 207px;
+
   height: 48px;
   background-color: #f4f7f6;
   border: none;
-  padding-left: 17px;
-  font-weight: regular;
+  padding-left: 15px;
   color: #000000;
   font-size: 13px;
   opacity: 0.54;
 }
 
+.search-posts-input-name {
+  width: 100%;
+  display: flex;
+}
+
+.search-area {
+  width: 100%;
+  
+}
 .search-area:focus {
   outline: 1px solid #b59f5b;
   outline-offset: -1px;
@@ -453,13 +462,16 @@ h1 {
   margin: 13px auto 29px;
 }
 
+.email-input-name {
+  display: flex;
+}
+
 .email-input {
-  width: 255px;
+  width: 100%;
   height: 48px;
   background-color: #f4f7f6;
   border: none;
   padding-left: 17px;
-  font-weight: regular;
   color: #000000;
   font-size: 13px;
   opacity: 0.54;
