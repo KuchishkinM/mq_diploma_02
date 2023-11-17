@@ -961,11 +961,20 @@ h1 {
   .card-image {
     max-width: 100%;
   }
+
   .card-img {
     width: 100%;
   }
 
   .sidebar {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .new-posts,
+  .mailing,
+  .tags,
+  .themes {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -978,8 +987,4 @@ h1 {
   .products-content {
     flex-wrap: wrap;
   }
-
-  
-
-  
 }
