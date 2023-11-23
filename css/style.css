@@ -51,10 +51,11 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  width: 80%;
-  margin: 0 auto;
-  padding: 25px 15px 0 15px;
+  max-width: 100%;
+  margin: 0 230px;
+  padding: 25px 0 0;
   z-index: 2;
+  align-items: center;
 }
 
 .logo-image {
@@ -62,7 +63,7 @@
 }
 
 .hidden-text,
-.pop-up-container__hidden {
+.__hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -79,6 +80,10 @@
 
 .menu-list-item {
   margin: auto 20px;
+}
+
+.menu-list-item:last-child {
+  margin-right: 0;
 }
 
 .menu-list-item a {
@@ -240,13 +245,12 @@ h1 {
 
 .container {
   display: flex;
-  max-width: 1220px;
-  margin: 50px auto 0;
-  padding: 0 30px;
+  max-width: 100%;
+  margin: 50px 230px 0;
 }
 
 .main {
-  margin-right: 30px;
+  margin-right: 120px;
 }
 
 .card {
@@ -259,7 +263,7 @@ h1 {
 }
 
 .card-image {
-  width: 100%;
+  max-width: 100%;
 }
 
 .card-content {
@@ -330,7 +334,7 @@ h1 {
 }
 
 .sidebar {
-  width: 272px;
+  max-width: 100%;
 }
 
 .sidebar-header {
@@ -400,7 +404,6 @@ h1 {
 }
 
 .search-area {
-
   height: 48px;
   background-color: #f4f7f6;
   border: none;
@@ -417,7 +420,6 @@ h1 {
 
 .search-area {
   width: 100%;
-  
 }
 .search-area:focus {
   outline: 1px solid #b59f5b;
@@ -427,7 +429,7 @@ h1 {
   display: block;
 }
 .search-btn {
-  width: 48px;
+  min-width: 48px;
   height: 48px;
   right: 0;
   background-color: #b59f5b;
@@ -440,6 +442,7 @@ h1 {
 
 .search-btn:hover {
   background-color: #323232;
+  cursor: pointer;
 }
 
 .mailing-header {
@@ -484,7 +487,7 @@ h1 {
 
 .subscribe-btn {
   width: 100%;
-  height: 48px;
+  min-height: 48px;
   margin-top: 18px;
   background-color: #b59f5b;
   border: none;
@@ -498,6 +501,7 @@ h1 {
 
 .subscribe-btn:hover {
   background-color: #323232;
+  cursor: pointer;
 }
 
 .section-tags-header {
@@ -595,11 +599,11 @@ h1 {
 }
 
 .products {
-  width: 75%;
+  max-width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 250px;
 }
 
 .products-content {
@@ -896,12 +900,24 @@ h1 {
     overflow: hidden;
   }
 
+  .logo-menu {
+    margin-left: 35px;
+  }
+
   .trends-content {
     flex-wrap: wrap;
   }
 
   .trend {
     width: 49.7%;
+  }
+  .container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .main {
+    margin-right: 35px;
   }
 
   .card {
@@ -910,9 +926,14 @@ h1 {
   .card-content {
     margin: auto 0;
   }
+  .products {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
   .products-content {
     flex-wrap: wrap;
   }
+
   .product {
     width: 46%;
   }
@@ -929,14 +950,14 @@ h1 {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-
+  
   .logo-menu {
     padding-top: 150px;
     justify-content: center;
   }
 
   .logo-image {
-    width: 95%;
+    width: 250px;
   }
 
   h1 {
@@ -955,7 +976,10 @@ h1 {
   .container {
     flex-direction: column;
     padding: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
+
   .main {
     padding: 0 15px;
     margin-right: 0;
@@ -989,6 +1013,11 @@ h1 {
   .themes {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .products {
+    margin-left: 35px;
+    margin-right:35px;
   }
 
   .product {
